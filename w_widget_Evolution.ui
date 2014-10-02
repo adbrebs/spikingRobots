@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_widget_Evolution</class>
+ <widget class="QWidget" name="w_widget_Evolution">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>564</width>
+    <height>232</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="w_but_Evolution">
+       <property name="text">
+        <string>Evolve</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="w_spinBox_Evolution">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="suffix">
+        <string> iterations</string>
+       </property>
+       <property name="prefix">
+        <string/>
+       </property>
+       <property name="maximum">
+        <number>50001</number>
+       </property>
+       <property name="value">
+        <number>20</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QProgressBar" name="w_progress_Evolution">
+       <property name="value">
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <property name="leftMargin">
+        <number>10</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Total number of generations</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="w_label_ItEvo">
+         <property name="text">
+          <string>0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="Line" name="line_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="w_plot_Evolution" name="w_plot_Ev" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="line_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="w_but_saveGraph">
+       <property name="text">
+        <string>Save Graph...</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="w_but_saveEv">
+       <property name="text">
+        <string>Save Evolution...</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="w_but_saveBestNet">
+       <property name="text">
+        <string>Save best evolved neural network...</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>w_plot_Evolution</class>
+   <extends>QWidget</extends>
+   <header>w_plot_Evolution.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>w_but_Evolution</tabstop>
+  <tabstop>w_spinBox_Evolution</tabstop>
+  <tabstop>w_but_saveGraph</tabstop>
+  <tabstop>w_but_saveEv</tabstop>
+  <tabstop>w_but_saveBestNet</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

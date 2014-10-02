@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_widget_Boxes</class>
+ <widget class="QWidget" name="w_widget_Boxes">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>295</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="w_tabWidget">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="tabPosition">
+      <enum>QTabWidget::West</enum>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="w_widget_Evolution" name="w_widget_Evo">
+      <attribute name="title">
+       <string>&amp;Evolution control</string>
+      </attribute>
+     </widget>
+     <widget class="w_widget_Simulation" name="w_widget_Sim">
+      <attribute name="title">
+       <string>&amp;Simulation control</string>
+      </attribute>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>w_widget_Evolution</class>
+   <extends>QWidget</extends>
+   <header>w_widget_Evolution.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>w_widget_Simulation</class>
+   <extends>QWidget</extends>
+   <header>w_widget_Simulation.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>w_tabWidget</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
